@@ -361,7 +361,7 @@
 
                     // Create a map object, and include the MapTypeId to add
                     // to the map type control.
-                    var $latlng = new google.maps.LatLng(52.5075419, 13.4261419),
+                    var $latlng = new google.maps.LatLng(43.6481147, -79.3786571),
                         $mapOptions = {
                             zoom: 13,
                             center: $latlng,
@@ -393,8 +393,9 @@
                 if (document.getElementById('gmapSrc')) {
                     initGmap();
                 }
-
-                loadScript('http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=initGmap', 'gmapSrc');
+//
+                //loadScript('http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=initGmap', 'gmapSrc');
+                loadScript('http://maps.googleapis.com/maps/api/js?key=AIzaSyAd1lj_XjJ03IGIN_y6LuMvXP-5s0j6tv8&v=3&sensor=false&callback=initGmap', 'gmapSrc');
             }
         })();
 
