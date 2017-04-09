@@ -12,6 +12,7 @@ import Blog from "maiku.net/components/pages/blog";
 import Contacts from "maiku.net/components/pages/contacts";
 import Resume from "maiku.net/components/pages/resume";
 import Feedback from "maiku.net/components/pages/feedback";
+import Portfolio from "maiku.net/components/pages/portfolio";
 
 //-- local resources
 import "maiku.net/resources/sass/style.scss";
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/contacts" component={Contacts} />
       <Route path="/resume" component={Resume}/>
       <Route path="/feedback" component={Feedback} />
+      <Route path="/portfolio" component={Portfolio} />
     </div>
   </Router>,
   root
