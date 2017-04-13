@@ -13,6 +13,7 @@ import Contacts from "maiku.net/components/pages/contacts";
 import Resume from "maiku.net/components/pages/resume";
 import Feedback from "maiku.net/components/pages/feedback";
 import Portfolio from "maiku.net/components/pages/portfolio";
+import Admin from "maiku.net/components/pages/admin";
 
 //-- local resources
 import "maiku.net/resources/sass/style.scss";
@@ -23,18 +24,20 @@ import "maiku.net/resources/vendor/preloader/preloader.css";
 import "maiku.net/resources/vendor/animation/animation.js";
 
 //-- root element
-const root = document.getElementById('root');
+const root = document.querySelector("#root");
+
 
 ReactDOM.render(
-    <Router>
+  <Router>
     <div>
-      <Route exact path="/" component={Home}/>
-      <Route path="/blog" component={Blog}/>
+      <Route exact path="/" component={Home} />
+      <Route path="/blog" component={Blog} />
       <Route path="/contacts" component={Contacts} />
-      <Route path="/resume" component={Resume}/>
+      <Route path="/resume" component={Resume} />
       <Route path="/feedback" component={Feedback} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/admin" component={Admin} />
     </div>
   </Router>,
   root
-);
+)
