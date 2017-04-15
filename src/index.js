@@ -22,6 +22,7 @@ import "maiku.net/resources/sass/layouts/mike.scss";
 
 import "maiku.net/resources/vendor/preloader/preloader.css";
 import "maiku.net/resources/vendor/animation/animation.js";
+//import "../node_modules/scrollreveal/dist/scrollreveal.min.js"
 
 //-- root element
 const root = document.querySelector("#root");
